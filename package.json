@@ -1,0 +1,14 @@
+{
+  "name": "oh-my-2fa",
+  "module": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
