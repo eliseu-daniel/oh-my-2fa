@@ -2,7 +2,11 @@
   "name": "oh-my-2fa",
   "module": "src/index.ts",
   "scripts": {
-    "start": "bun run src/index.ts"
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^0.7.4",
+    "elysia": "latest"
   },
   "type": "module",
   "devDependencies": {
