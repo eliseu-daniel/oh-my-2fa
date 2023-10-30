@@ -12,9 +12,10 @@ export default class TwoFactorAuthentication {
   }
 
   getTimestamp(date: Date): string {
-    const time = date.getTime().toString()
-    const timeAtStartOfMinute = time.slice(time.length - 4) + '0000'
-    return timeAtStartOfMinute
+    const time = date.getTime()
+    const timeAtStartOfMinute = Math.floor(time / 60000) * 60000
+    const timestamp = timeAtStartOfMinute.toString()
+    return timestamp
   }
 
   isValidOTP(otp: string, date = new Date()): boolean {
