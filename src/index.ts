@@ -1,10 +1,9 @@
-import TwoFactorAuthentication from './model/2FA'
-import SecretKey from './model/SecretKey'
+import App from './app'
 
-const _2FA = new TwoFactorAuthentication(new SecretKey('30cda297ae57'))
+const app = new App()
 
-console.log(_2FA.generateOTP(new Date(1698464402167)))
-console.log(_2FA.generateOTP(new Date(1698464402167)))
-console.log(_2FA.generateOTP(new Date(1698464403167)))
-console.log(_2FA.isValidOTP('166582', new Date(1698464402167)))
-console.log(_2FA.isValidOTP('166582', new Date(1698464403167)))
+const port = 3333
+
+app.start(port, () => {
+  console.log(`🦊 Elysia is running at ${app.hostname}:${port}`)
+})
