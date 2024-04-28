@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -19,24 +21,9 @@ body {
 }
 
 label {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
-    margin-right: 10px;
-}
-
-.CreateSecretKey {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    vertical-align: top;
-}
-
-.CreateSecretKey:hover {
-    background-color: #0056b3;
 }
 
 .CreateKey {
@@ -50,11 +37,34 @@ label {
     border-radius: 5px;
 }
 
-.button-container {
-    margin-top: 10px;
+.authent2fa label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-button[type="button"] {
+.authent2fa input {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-container1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button[type="submit"] {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -64,6 +74,20 @@ button[type="button"] {
     border-radius: 5px;
 }
 
-button[type="button"]:hover {
+button[type="submit1"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit1"]:hover {
     background-color: #0056b3;
 }
